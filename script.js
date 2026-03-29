@@ -40,3 +40,55 @@ document.addEventListener('DOMContentLoaded', function() {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });
+
+// Toggle Contact Info
+function toggleContact() {
+    const contactInfo = document.getElementById('contactInfo');
+    if (contactInfo.style.display === 'none') {
+        contactInfo.style.display = 'block';
+    } else {
+        contactInfo.style.display = 'none';
+    }
+}
+
+// AJAX Contact Form (no redirect)
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+  if (!contactForm || !formMessage) return;
+
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const submitUrl = 'https://formsubmit.co/j.maroufi.service@gmail.com';
+
+    fetch(submitUrl, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        formMessage.style.display = 'block';
+        formMessage.style.backgroundColor = '#d4edda';
+        formMessage.style.color = '#155724';
+        formMessage.innerHTML = 'Danke! Deine Nachricht wurde gesendet.';
+        contactForm.reset();
+      } else {
+        return response.json().then(data => {
+          throw new Error((data.errors && data.errors[0] && data.errors[0].message) || 'Fehler beim Senden.');
+        });
+      }
+    })
+    .catch(error => {
+      formMessage.style.display = 'block';
+      formMessage.style.backgroundColor = '#f8d7da';
+      formMessage.style.color = '#721c24';
+      formMessage.innerHTML = 'Beim Senden ist ein Fehler aufgetreten. Bitte probiere es später noch einmal.';
+      console.error('Form send error:', error);
+    });
+  });
+});
