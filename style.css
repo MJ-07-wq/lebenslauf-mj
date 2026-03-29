@@ -99,11 +99,6 @@ body {
 }
 /*Slider Styles*/
 
-/* Beige Background */
-.bg-beige {
-  background-color: #F5F5DC;
-}
-
 /*Card Styles*/
 .button {
   padding: 15px 25px;
@@ -112,7 +107,7 @@ body {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #363636;
+  background-color: #202020;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -371,104 +366,3 @@ body {
 }
 /* Timeline Styles */
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.containerContact {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.containerContact::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.titleContact {
-  color: grey;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
-
-/* Contact Form Styles */
-input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  font-family: Arial, sans-serif;
-}
-
-input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
-  outline: none;
-  border-color: #363636;
-  box-shadow: 0 0 5px rgba(54, 54, 54, 0.3);
-}
-
-textarea {
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #363636;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-input[type=submit]:hover {
-  background-color: #161616;
-}
-
-.containerContactForms {
-  border-radius: 5px;
-  background-color: #F5F5DC;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}

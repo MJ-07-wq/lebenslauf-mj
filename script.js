@@ -40,13 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });
-
-// Toggle Contact Info
-function toggleContact() {
-    const contactInfo = document.getElementById('contactInfo');
-    if (contactInfo.style.display === 'none') {
-        contactInfo.style.display = 'block';
-    } else {
-        contactInfo.style.display = 'none';
-    }
-}
