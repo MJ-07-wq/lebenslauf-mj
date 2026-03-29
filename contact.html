@@ -68,6 +68,11 @@
 <div class="containerContactForms" style="max-width: 1000px; margin: 20px auto; padding: 0 15px;">
     <h2 style="text-align: center; margin-top: 40px;">Sende mir eine Nachricht</h2>
     <form id="contactForm" action="javascript:void(0);" method="POST">
+        <input type="hidden" name="_subject" value="Neue Nachricht von deiner Portfolio-Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+
         <label for="fname">Vorname</label>
         <input type="text" id="fname" name="firstname" placeholder="Dein Vorname.." required>
 
@@ -78,7 +83,7 @@
         <input type="email" id="email" name="email" placeholder="Deine E-Mail.." required>
 
         <label for="subject">Nachricht</label>
-        <textarea id="subject" name="subject" placeholder="Schreib deine Nachricht hier..." style="height:200px" required></textarea>
+        <textarea id="subject" name="message" placeholder="Schreib deine Nachricht hier..." style="height:200px" required></textarea>
 
         <input type="submit" value="Senden">
     </form>
