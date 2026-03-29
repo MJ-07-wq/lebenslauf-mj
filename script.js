@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
 
     const formData = new FormData(contactForm);
-    const submitUrl = `https://formsubmit.co/ajax/j.maroufi.service@gmail.com`;
+    const email = 'j.maroufi.service@gmail.com';
+    const submitUrl = `https://formsubmit.co/ajax/${email}`;
 
     formData.append('_replyto', formData.get('email'));
 
