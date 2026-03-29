@@ -1,0 +1,368 @@
+body {
+        background-color: beige !important;
+        overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(15, 15, 15);
+  border-radius: 10px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Slider Styles */
+.mySlides img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  border: 20px solid rgb(199, 199, 172);
+  border-radius: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*Slider Styles*/
+
+/*Card Styles*/
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #202020;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #161616}
+
+.button:active {
+  background-color: #666666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*Card Styles*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Container Styles*/
+.skills, .adobe, .basics {
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid rgb(199, 199, 172);
+  border-radius: 10px;
+}
+
+.skills:hover, .adobe:hover, .basics:hover, .tools:hover {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 10px;
+  border: 20px solid rgb(199, 199, 172);
+}
+
+.tools {
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid rgb(199, 199, 172);
+  border-radius: 10px;
+}
+
+
+/*Container Styles*/
+
+/*Skills Styles*/
+.title{
+  text-align: center;
+}
+/*Skills Styles*/
+
+/*Footer Styles*/
+footer {
+  color: white;
+  text-align: center;
+}
+
+/* Skill Bar Styles (Bootstrap-compatible) */
+.skill-bar {
+  position: relative;
+  height: 1.5rem;
+  background-color: #e9ecef;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  min-width: 0;
+  background-color: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: width 0.6s ease;
+}
+
+.skill-bar:not(.progress) .skill-bar-fill {
+  width: 100%;
+}
+
+/* Skill bars as prozent example */
+.skill-progress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 0.375rem;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.skill-fill {
+  text-align: right;
+  padding: 10px 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  min-height: 2rem;
+}
+
+.skill-fill.html { width: 50%; background-color: #ff7f50; }
+.skill-fill.css { width: 40%; background-color: #2196F3; }
+.skill-fill.bootstrap { width: 33%; background-color: #6610f2; }
+.skill-fill.csharp { width: 30%; background-color: #6f42c1; }
+.skill-fill.js { width: 15%; background-color: #c5c900; }
+.skill-fill.python { width: 10%; background-color: #35dba9; }
+.skill-fill.php { width: 10%; background-color: #766c99; }
+.skill-fill.sql { width: 20%; background-color: #0dcaf0; }
+
+.skill-fill.illustrator { width: 40%; background-color: #5c0e00; }
+.skill-fill.premiere { width: 65%; background-color: #020d72; }
+.skill-fill.aftereffects { width: 33%; background-color: #020d72; }
+
+.skill-fill.ms365 { width: 50%; background-color: #511bcf; }
+.skill-fill.capcut { width: 30%; background-color: #000000; }
+.skill-fill.schach { width: 33%; background-color: #3a5775; }
+.skill-fill.deutsch { width: 100%; background-color: #198754; }
+.skill-fill.englisch { width: 60%; background-color: #ddc703; }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Timeline Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerT {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerT::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .containerT {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containerT::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+/* Timeline Styles */
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
