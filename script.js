@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
 
     const formData = new FormData(contactForm);
-    const submitUrl = 'https://formsubmit.co/j.maroufi.service@gmail.com';
+    const action = contactForm.action;
 
-    fetch(submitUrl, {
+    fetch(action, {
       method: 'POST',
       body: formData,
       headers: {
