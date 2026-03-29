@@ -64,6 +64,8 @@ function toggleContact() {
   }
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 // AJAX Contact Form (no redirect)
 document.addEventListener('DOMContentLoaded', function() {
   const contactForm = document.getElementById('contactForm');
@@ -139,3 +141,4 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+/////////////////////////////////////////////////////////////////////////////////////////////////////
