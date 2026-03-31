@@ -82,11 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitUrl = contactForm.dataset.endpoint;
     const submitButton = contactForm.querySelector('input[type="submit"]');
 
-    if (!submitUrl) {
+    if (!submitUrl || submitUrl.includes('REPLACE_WITH_YOUR_FORM_ID')) {
       formMessage.style.display = 'block';
       formMessage.style.backgroundColor = '#f8d7da';
       formMessage.style.color = '#721c24';
-      formMessage.textContent = 'Die Formular-Konfiguration fehlt.';
+      formMessage.textContent = 'Formular-Endpunkt fehlt. Bitte trage deine echte Formspree-Form-ID in contact.html ein.';
       return;
     }
 
@@ -127,11 +127,9 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       })
       .catch(function(error) {
-        formMessage.style.display = 'block';
-        formMessage.style.backgroundColor = '#f8d7da';
-        formMessage.style.color = '#721c24';
-        formMessage.textContent = `Beim Senden ist ein Fehler aufgetreten: ${error.message}`;
         console.error('Form send error:', error);
+        // No mail-client fallback: try a normal POST to the same endpoint.
+        contactForm.submit();
       })
       .finally(function() {
         if (submitButton) {
