@@ -583,3 +583,45 @@ input[type=submit]:hover {
   max-width: 50%;
   max-height: 150px;
 }
+
+.yt-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.yt-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+}
+
+.yt-thumb:hover img {
+  transform: scale(1.05);
+}
+
+/* Play Button Overlay */
+.yt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
