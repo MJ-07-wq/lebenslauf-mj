@@ -62,8 +62,9 @@ body {
 }
 
 .text {
-  color: white;
-  font-size: 15px;
+  color: black;
+  background-color: white;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -542,6 +543,15 @@ input[type=submit]:hover {
 
 .project-card .card-body {
   padding: 15px;
+}
+.project-card .yt-thumb {
+  max-width: none;
+}
+.project-card .project-media {
+  height: auto;
+}
+.project-card .yt-thumb img {
+  height: 100%;
 }
 .card-body {
   font-size: 0.9rem;
