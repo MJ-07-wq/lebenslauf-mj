@@ -140,3 +140,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+// Hover preview behavior disabled; thumbnails remain static and clickable
+document.addEventListener('DOMContentLoaded', function() {
+  const thumbs = document.querySelectorAll('.yt-thumb');
+  thumbs.forEach(function(el) {
+    const img = el.querySelector('img');
+    if (img) {
+      img.style.cursor = 'pointer';
+    }
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Carousel arrow controls for netflix rows
+document.addEventListener('DOMContentLoaded', function() {
+  const carousels = document.querySelectorAll('.carousel');
+  carousels.forEach(function(carousel) {
+    const track = carousel.querySelector('.carousel-track');
+    const btnLeft = carousel.querySelector('.carousel-arrow.left');
+    const btnRight = carousel.querySelector('.carousel-arrow.right');
+    if (!track) return;
+
+    if (btnLeft) btnLeft.addEventListener('click', function() {
+      track.scrollBy({ left: -track.clientWidth * 0.7, behavior: 'smooth' });
+    });
+    if (btnRight) btnRight.addEventListener('click', function() {
+      track.scrollBy({ left: track.clientWidth * 0.7, behavior: 'smooth' });
+    });
+  });
+});
+

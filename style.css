@@ -479,8 +479,143 @@ input[type=submit]:hover {
     transition: 0.3s;
 }
 
+.project-section {
+  padding-bottom: 2rem;
+}
+
+.project-page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.project-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.project-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.25rem;
+}
+
+/* Netflix-style carousel rows */
+.netflix-section {
+  background: linear-gradient(180deg, rgba(10,10,10,0.0) 0%, rgba(10,10,10,0.03) 100%);
+  padding: 10px 0 30px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 40px;
+  align-items: stretch;
+  height: 260px; /* ensure track has a fixed height so items fill it */
+}
+
+.carousel-item {
+  display: block;
+  min-width: 220px;
+  width: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  flex: 0 0 auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%; /* fill the track vertically */
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 8px 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  color: #fff;
+}
+
+.carousel-item .item-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.carousel-item:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.5);
+}
+
+.carousel-arrow {
+  position: absolute;
+  z-index: 40;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(20,20,20,0.6);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-arrow.left { left: 6px; }
+.carousel-arrow.right { right: 6px; }
+
+/* hide scrollbar but still allow scroll on track */
+.carousel-track::-webkit-scrollbar { height: 8px; }
+.carousel-track::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 6px; }
+
+@media (min-width: 1200px) {
+  .carousel-item { min-width: 260px; width: 260px; }
+  .carousel-item img { height: 100%; }
+}
+
+/* Ensure standalone Science Academy trailer teaser uses full-height media */
+.science-media {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 9 / 16;
+  margin: auto;
+  height: 100%;
+}
+
+.science-media img,
+.science-media iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .project-card {
   overflow: hidden;
+  background: linear-gradient(135deg, #111111 0%, #1f1f1f 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 
 .home-card {
@@ -529,36 +664,144 @@ input[type=submit]:hover {
 }
 
 .project-media {
-  height: 500px;
+  height: auto;
   object-fit: cover;
   width: 100%;
 }
-
-
 
 .project-card .row {
   margin: 0;
 }
 
-.project-card .card-body {
-  padding: 15px;
+/* Desktop: make the left media column fill the card height and span more width */
+@media (min-width: 768px) {
+  .project-card {
+    min-height: 260px;
+  }
+
+  .project-card .row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .project-card .col-md-5,
+  .project-card .col-lg-4 {
+    flex: 0 0 45%;
+    max-width: 45%;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .project-card .col-md-7,
+  .project-card .col-lg-8 {
+    flex: 1 0 55%;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-card .yt-thumb,
+  .project-card .yt-thumb img,
+  .project-card .yt-thumb iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
+
+/* Ensure card wrapper stretches so left media column fills full card height */
+@media (min-width: 768px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .project-card > .row {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .project-card .col-md-5,
+  .project-card .col-lg-4 {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .project-card .col-md-5 .yt-thumb,
+  .project-card .col-md-5 .yt-thumb img,
+  .project-card .col-md-5 iframe,
+  .project-card .col-lg-4 .yt-thumb,
+  .project-card .col-lg-4 .yt-thumb img,
+  .project-card .col-lg-4 iframe {
+    height: 100% !important;
+  }
+}
+
+.project-card .card-body {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+.project-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.project-card .card-text {
+  color: #ff6b6b;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.project-card .text-muted {
+  color: #d6d6d6 !important;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .project-card .yt-thumb {
   max-width: none;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
 }
+
 .project-card .project-media {
   height: auto;
 }
+
 .project-card .yt-thumb img {
-  height: 100%;
-}
-.card-body {
-  font-size: 0.9rem;
+  width: 100%;
+  height: 220px; /* consistent preview height */
+  object-fit: cover;
+  filter: brightness(0.95);
+  display: block;
 }
 
-.card-body .card-title {
-  font-size: 1.1rem;
-  font-weight: bold;
+.project-card .yt-thumb iframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  display: block;
+}
+
+.card-body {
+  font-size: 0.9rem;
 }
 
 .card-body p {
@@ -568,9 +811,35 @@ input[type=submit]:hover {
 
 .science-media {
   width: 100%;
-  max-width: 250px;
+  max-width: 280px;
   aspect-ratio: 9 / 16;
   margin: auto;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 767.98px) {
+  .project-card .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card .col-md-5,
+  .project-card .col-md-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .project-card .yt-thumb img,
+  .project-card .yt-thumb iframe {
+    height: 260px; /* slightly taller on narrow screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .project-card .yt-thumb img,
+  .project-card .yt-thumb iframe {
+    height: 260px; /* slightly larger on large screens */
+  }
 }
 
 .science-media iframe {
@@ -598,7 +867,7 @@ input[type=submit]:hover {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 250px;
+  max-width: 320px;
   aspect-ratio: 9 / 16;
   overflow: hidden;
   border-radius: 12px;
