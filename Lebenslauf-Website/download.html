@@ -28,7 +28,7 @@
                 <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
             </ul>
@@ -36,21 +36,40 @@
     </div>
 </nav>
 <!-- //////////////////////////////////////// -->
-<p>
-Hier können Sie meinen Lebenslauf und meinen QR-Code herunterladen:
-</p>
+<div class="container mt-5 text-center">
+    <h1>Download</h1>
+    <p class="mb-4">Hier kannst du meinen Lebenslauf und meinen QR-Code herunterladen:</p>
 
-<p>
-<a href="downloads/Lebenslauf.pdf" download>
-  <img src="downloads/Lebenslauf.pdf" alt="Lebenslauf" width="104" height="142">
-</a>
-</p>
+    <div class="row justify-content-center g-4">
 
-<p>
-<a href="downloads/QR-Code.jpg" download>
-  <img src="downloads/QR-Code.jpg" alt="QR-Code" width="104" height="142">
-</a>
-</p>
+        <!-- Lebenslauf -->
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>Lebenslauf</h5>
+                <p>Klicke hier, um meinen CV als PDF herunterzuladen.</p>
+                <iframe src="downloads/Lebenslauf.pdf" width="100%" height="500px"></iframe>
+                <a href="downloads/Lebenslauf.pdf" class="btn btn-dark" download>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+
+        <!-- QR Code -->
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>LinkedIn</h5>
+                <p>Scanne hier, um mein LinkedIn Profil zu öffnen.</p>
+                <div class="qr-card-media">
+                    <img src="images/qrlinkedIn.jpg" alt="LinkedIn QR Code" class="qr-code-image">
+                </div>
+                <a href="images/qrlinkedIn.jpg" class="btn btn-dark" download>
+                    Download QR Code
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 </body>
