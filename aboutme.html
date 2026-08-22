@@ -1,211 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_about">About | Jakob Maroufi</title>
+  <meta name="description" content="About Jakob Maroufi – technology, media and creative projects.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- //////////////////////////////////////// -->
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-<!-- //////////////////////////////////////// -->
-<br>
-<div class="title"><h1>About Me</h1></div>
-<br>
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
 
-<div class="container-fluid px-3" style="max-width: 1000px; margin: 0 auto;">
-    <div class="row align-items-stretch justify-content-center">
-        <div class="col-12 col-md-4 text-center">
-            <img src="images/me.jpg" class="img-fluid rounded" alt="Mein Foto" style="max-width: 100%; height: 100%;">
-        </div>
-        <div class="col-12 col-md-8">
-            <div class="bg-white text-dark p-3 rounded">
-                <p>
-                    19 Jahre junger, technikfokussierter
-                    <span data-bs-toggle="tooltip" title="Höhere Technische Lehranstalt">HTL</span>-Schüler
-                    mit starkem Interesse an
-                    <p>
-                        Webentwicklung, App- und Spieleentwicklung, <br>
-                        vielen Challenges, <br>
-                        einem gutem Lifestyle.
-                    </p>
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
 
-                    Arbeitet motiviert, humorvoll und lösungsorientiert.
-                    Liebt Projekte, bei denen Kreativität und Technik zusammenlaufen.
-                    Bringt Zuverlässigkeit, Teamgeist, viel Humor und Ausdauer mit, besonders wenn's komplex wird.
-                </p>
-
-                <p>
-                    Besonders interessiere ich mich für Programmierung mit
-                    <span data-bs-toggle="tooltip" title="Hypertext Markup Language">HTML</span>,
-                    <span data-bs-toggle="tooltip" title="Cascading Style Sheets">CSS</span>,
-                    und JavaScript sowie für die Entwicklung von kleinen Anwendungen.
-                </p>
-
-                <p>
-                    Mein Ziel ist es, praktische Erfahrung in der
-                    <span data-bs-toggle="tooltip" title="Informationstechnologie">IT</span>-Branche
-                    zu sammeln und mich als Web-, App- und Spieleentwickler weiterzuentwickeln.
-                </p>
-
-                <p>
-                    Seit 2023 besuche ich die
-                    <span data-bs-toggle="tooltip" title="Höhere Technische Lehranstalt">HTL</span>
-                    für Informatik in Krems, wo ich meine Kenntnisse in verschiedenen Programmiersprachen und Technologien vertiefe.
-                </p>
-            </div>
-        </div>
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
   </div>
-</div>
+</header>
 
-<div class="mt-4 text-center" style="max-width: 1000px; margin: 0 auto;">
-    <h2>Quick Facts</h2>
-    <div class="row justify-content-center g-4">
-        <div class="col-12 col-md-4 bg-white text-dark p-3 rounded">
-            <h5>Persönlich</h5>
-            <ul class="text-start">
-                <li>19 Jahre jung</li>
-                <li>Geboren am 09.03.2007</li>
-                <li>Wohnhaft in Grafenwörth</li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-4 bg-white text-dark p-3 rounded">
-            <h5>Technische Skills</h5>
-            <ul class="text-start">
-                <li>Arbeit mit Programmiersprachen</li>
-                <li>Interesse an Game Development</li>
-                <li>Medien Design Kenntnisse</li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-4 bg-white text-dark p-3 rounded">
-            <h5>Fokus</h5>
-            <ul class="text-start">
-                <li>Starker Fokus auf Webentwicklung</li>
-                <li>Interesse an App-Entwicklung</li>
-                <li>Ziel: Full-Stack Developer</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<br>
-<!-- //////////////////////////////////////// -->
 
-<div class="title"><h2>Stärken</23></div>
-<div class="row mt-4">
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="about_label">ABOUT ME</span>
+    <h1 data-i18n-html="about_title">Tech on my mind.<br>Camera in my hand.</h1>
+    <p data-i18n="about_lead">I like projects where code, media and creativity work together instead of living in separate boxes.</p>
+  </section>
 
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Kämpfermentalität:</h5>
-            <p>Ich gebe nicht auf, selbst wenn die Situation stressig oder herausfordernd wird.</p>
-        </div>
+  <section class="section-shell content-grid">
+    <div class="glass-card profile-card reveal">
+      <img src="images/me2.jpg" alt="Jakob Maroufi" onerror="this.onerror=null;this.src='images/hero-jakob.png';">
     </div>
 
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Analytisches Denken & Problemlösung:</h5>
-            <p>Ich kann komplexe Themen schnell erfassen und kreative Lösungen entwickeln.</p>
-        </div>
+    <div class="glass-card about-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="about_intro_label">HEY, I'M JAKOB</span>
+      <h2 data-i18n="about_intro_title">Builder, creator and very curious.</h2>
+      <p data-i18n="about_intro_text_1">I'm an HTL student focused on technology with a strong interest in web development, software, media design and creative tech projects. Game development is on my learning list — but it only becomes a skill once I've actually built something with it.</p>
+      <p data-i18n="about_intro_text_2">I like working solution-first, experimenting a lot and learning by building. That's also how MJError404 became a place for videos, creative experiments and projects around technology and media.</p>
+
+      <div class="stat-grid">
+        <div class="stat"><b>Web</b><span>HTML · CSS · JavaScript</span></div>
+        <div class="stat"><b data-i18n="about_stat_media">Media</b><span>Video · Design · Storytelling</span></div>
+        <div class="stat"><b data-i18n="about_stat_projects">Projects</b><span>Build · Test · Improve</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-development">
+    <div class="about-section reveal">
+      <div class="section-label"><span class="code-symbol">&gt;</span> <span data-i18n="strengths_label">STRENGTHS</span></div>
+      <h2 data-i18n="strengths_title">What I bring to the table.</h2>
+
+      <div class="development-grid">
+        <article class="development-card spotlight-card">
+          <span class="development-icon">⚔️</span>
+          <h3 data-i18n="strength_fighter_title">Fighter mentality</h3>
+          <p data-i18n="strength_fighter_text">When something doesn't work, my first reaction is usually “again” rather than “whatever”.</p>
+        </article>
+
+        <article class="development-card spotlight-card">
+          <span class="development-icon">🧠</span>
+          <h3 data-i18n="strength_problem_title">Problem solving</h3>
+          <p data-i18n="strength_problem_text">Break complex tasks down, test ideas and move step by step toward a working solution.</p>
+        </article>
+
+        <article class="development-card spotlight-card">
+          <span class="development-icon">🚀</span>
+          <h3 data-i18n="strength_initiative_title">Initiative</h3>
+          <p data-i18n="strength_initiative_text">Ideas quickly become prototypes, experiments or full projects instead of staying in a notes app forever.</p>
+        </article>
+
+        <article class="development-card spotlight-card">
+          <span class="development-icon">🎬</span>
+          <h3 data-i18n="strength_creative_title">Creativity + technology</h3>
+          <p data-i18n="strength_creative_text">Technology should work — but it can also look good, feel good and tell a story.</p>
+        </article>
+      </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Hohe Sensibilität & Empathie:</h5>
-            <p>Ich nehme Mitmenschen und Situationen intensiv wahr, was mir hilft, auf andere einzugehen.</p>
-        </div>
+    <div class="about-section debugging-section reveal">
+      <div class="section-label debugging-label"><span class="status-dot"></span> <span data-i18n="debug_label">STILL_DEBUGGING</span></div>
+      <h2 data-i18n="debug_title">Nobody ships without bugs.</h2>
+      <p class="debugging-intro" data-i18n="debug_intro">A few things version Jakob.exe is still working on.</p>
+
+      <div class="development-grid">
+        <article class="development-card debug-card spotlight-card">
+          <div class="debug-card-top"><span class="bug-icon">🐛</span><span class="debug-status" data-i18n="status_open">OPEN</span></div>
+          <h3 data-i18n="debug_perfection_title">Perfectionism</h3>
+          <p data-i18n="debug_perfection_text">I can spend too long polishing details. I'm learning when “done and good” beats another hour of tweaking.</p>
+          <div class="debug-progress"><div class="debug-progress-bar progress-70"></div></div>
+          <small class="debug-note" data-i18n="debug_perfection_note">Fix in progress...</small>
+        </article>
+
+        <article class="development-card debug-card spotlight-card">
+          <div class="debug-card-top"><span class="bug-icon">🧩</span><span class="debug-status" data-i18n="status_open">OPEN</span></div>
+          <h3 data-i18n="debug_overthink_title">Overthinking</h3>
+          <p data-i18n="debug_overthink_text">Sometimes a small problem turns into a full side quest. First check: is there a simpler solution?</p>
+          <div class="debug-progress"><div class="debug-progress-bar progress-55"></div></div>
+          <small class="debug-note" data-i18n="debug_overthink_note">Refactoring thoughts...</small>
+        </article>
+
+        <article class="development-card debug-card spotlight-card">
+          <div class="debug-card-top"><span class="bug-icon">🗺️</span><span class="debug-status warning" data-i18n="status_warning">WARNING</span></div>
+          <h3 data-i18n="debug_sidequests_title">Too many side quests</h3>
+          <p data-i18n="debug_sidequests_text">New ideas can become new projects very quickly. Prioritising the main quest is still being improved.</p>
+          <div class="debug-progress"><div class="debug-progress-bar progress-60"></div></div>
+          <small class="debug-note" data-i18n="debug_sidequests_note">Task manager required.</small>
+        </article>
+
+        <article class="development-card debug-card spotlight-card">
+          <div class="debug-card-top"><span class="bug-icon">📦</span><span class="debug-status learning" data-i18n="status_learning">LEARNING</span></div>
+          <h3 data-i18n="debug_experience_title">Experience</h3>
+          <p data-i18n="debug_experience_text">There are still many technologies I want to learn. The plan is simple: build, test, repeat.</p>
+          <div class="debug-progress"><div class="debug-progress-bar progress-45"></div></div>
+          <small class="debug-note" data-i18n="debug_experience_note">Installing updates...</small>
+        </article>
+      </div>
     </div>
+  </section>
+</main>
 
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Eigenverantwortung & Selbstorganisation: </h5>
-            <p>Ich kann mir Ziele setzen, Pläne erstellen und diese konsequent umsetzen.</p>
-        </div>
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
     </div>
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Humor & positive Energie:</h5>
-            <p>Ich motiviere mein Umfeld und bleibe selbst in stressigen Momenten optimistisch und Humorvoll.</p>
-        </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
     </div>
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-2">
-            <h5>Selbstbewusstsein & Respekt:</h5>
-            <p>Ich bin selbstbewusst genug, ich selbst zu sein und respektvoll genug, andere so sein zu lassen.</p>
-        </div>
-    </div>
-</div>
-
-<br>
-   
-<div class="title"><h3>Schwächen</h3></div>
-<div class="row mt-4">
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-3">
-            <h5>Emotionale Sensitivität:</h5>
-            <p>Starke Gefühle können mich kurzfristig ablenken, doch ich lerne, sie produktiv zu nutzen.</p>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-3">
-            <h5>Perfektionismus:</h5>
-            <p>Ich neige dazu, Details genau zu prüfen, was manchmal Zeit kostet, aber Qualität sichert.</p>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-3">
-            <h5>Schlaf-Management in Stressphasen:</h5>
-            <p>Unter Druck kann mein Schlafrhythmus bisschen ungenau werden, ich arbeite aktiv daran, mich besser zu regenerieren.</p>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card shadow p-3 mb-3">
-            <h5>Gedankenkarussell:</h5>
-            <p>Bei vielen parallelen Sorgen gerate ich manchmal in Grübeln, aber ich nutze Methoden wie Pausen, um fokussiert zu bleiben.</p>
-        </div>
-    </div>
-    
-
-
-</div>
-</body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi 
-    </div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
 </footer>
+
+</body>
 </html>

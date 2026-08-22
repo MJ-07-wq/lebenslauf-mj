@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_contact">Contact | Jakob Maroufi</title>
+  <meta name="description" content="Contact Jakob Maroufi through a public portfolio form.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
+
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="contact_label">CONTACT</span>
+    <h1 data-i18n="contact_title">Say hello.</h1>
+    <p data-i18n="contact_lead">For projects, feedback, collaboration or simply a message. No need to publish private contact details for that.</p>
+  </section>
+
+  <section class="section-shell contact-grid">
+    <div class="glass-card contact-photo reveal">
+      <img src="images/me3.jpg" alt="Jakob Maroufi" onerror="this.onerror=null;this.src='images/hero-jakob.png';">
     </div>
-</nav>
-<!-- //////////////////////////////////////// -->
 
-<!-- //////////////////////////////////////// -->
+    <div class="glass-card contact-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="contact_get_in_touch">GET IN TOUCH</span>
+      <h2 data-i18n="contact_form_title">Send a message</h2>
+      <p data-i18n="contact_form_text">Use the form or one of the public profiles below.</p>
 
-<div class="container-fluid px-3" style="max-width: 1000px; margin: 0 auto;">
-    <div class="row align-items-stretch justify-content-center">
-        <div class="col-12 col-md-4 text-center">
-            <img src="images/me.jpg" alt="Jakob" class="img-fluid rounded" style="max-width: 100%; height: 100%; object-fit: cover;">
+      <form id="contactForm" class="contact-form" action="https://formspree.io/f/mojpwzze" method="POST">
+        <input type="hidden" name="_subject" value="Neue Nachricht vom Jakob-Maroufi-Portfolio">
+
+        <div class="form-row">
+          <label><span data-i18n="form_firstname">First name</span><input type="text" name="firstname" required autocomplete="given-name"></label>
+          <label><span data-i18n="form_lastname">Last name</span><input type="text" name="lastname" required autocomplete="family-name"></label>
         </div>
-        <div class="col-12 col-md-8">
-            <div class="contact-card">
-                    <h2>Jakob Maroufi</h2>
-                    <p class="titleContact">HTL Student &amp; Web Developer</p>
-                    <p>Click on the contact button to get in touch!</p>
-                    <p><button class="button" onclick="toggleContact()">Contact</button></p>
-                    
-                    <div id="contactInfo" style="display: none; margin-top: 20px;">
-                        <hr>
-                        <h5>Kontaktinformationen:</h5>
-                        <p><strong>Email:</strong> <a href="mailto:j.maroufi@htlkrems.at">j.maroufi@htlkrems.at</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:jakob.maroufi140@gmail.com">jakob.maroufi140@gmail.com</a></p>
-                        <p><strong>Telefon:</strong> <a href="tel:+436609668239">+43 660 966 8239</a></p>
-                        <p><strong>Adresse:</strong> Grafenwörth, Österreich</p>
-                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank">linkedIn.com/in/jakob-maroufi-1bb01a386</a></p>
-                        <p><strong>GitHub:</strong> <a href="https://mj-07-wq.github.io/lebenslauf-mj/index.html" target="_blank">mj-07-wq.github.io/lebenslauf-mj/index.html</a></p>
-                    </div>
-            </div>
-        </div>
+
+        <label><span data-i18n="form_email">Email</span><input type="email" name="email" required autocomplete="email"></label>
+
+        <label>
+          <span data-i18n="form_message">Message</span>
+          <textarea name="message" required data-i18n-placeholder="form_placeholder" placeholder="What's on your mind?"></textarea>
+        </label>
+
+        <button class="btn btn-primary form-submit" type="submit" data-no-ripple data-i18n="form_submit">Send message</button>
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </form>
+
+      <div class="social-list">
+        <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener"><span>YouTube · MJDebugLife</span><b>↗</b></a>
+        <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener"><span>LinkedIn · Jakob Maroufi</span><b>↗</b></a>
+        <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener"><span>TikTok · MJDebugLife</span><b>↗</b></a>
+      </div>
     </div>
-</div>
+  </section>
+</main>
 
-<div class="containerContactForms" style="max-width: 1000px; margin: 20px auto; padding: 0 15px;">
-    <h2 style="text-align: center; margin-top: 40px;">Sende mir eine Nachricht</h2>
-    <form
-        id="contactForm"
-        action="https://formspree.io/f/mojpwzze"
-        data-endpoint="https://formspree.io/f/mojpwzze"
 
-        method="POST">
-        <input type="hidden" name="_subject" value="Neue Nachricht von deiner Portfolio-Website">
-
-        <label for="fname">Vorname</label>
-        <input type="text" id="fname" name="firstname" placeholder="Dein Vorname.." required>
-
-        <label for="lname">Nachname</label>
-        <input type="text" id="lname" name="lastname" placeholder="Dein Nachname.." required>
-
-        <label for="email">E-Mail</label>
-        <input type="email" id="email" name="email" placeholder="Deine E-Mail.." required>
-
-        <label for="subject">Nachricht</label>
-        <textarea id="subject" name="message" placeholder="Schreib deine Nachricht hier..." style="height:200px" required></textarea>
-
-        <input type="submit" value="Senden">
-    </form>
-    <div id="formMessage" style="display: none; margin-top: 16px; padding: 12px; border-radius: 4px;"></div>
-</div>
-<br>
-</body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
     </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
 </footer>
+
+</body>
 </html>

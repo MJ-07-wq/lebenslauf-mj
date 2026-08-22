@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_download">Download | Jakob Maroufi</title>
+  <meta name="description" content="CV and public links for Jakob Maroufi.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
+
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="download_label">DOWNLOAD</span>
+    <h1 data-i18n="download_title">CV & links.</h1>
+    <p data-i18n="download_lead">A compact place for documents and public profiles. This page is intentionally not part of the main navigation.</p>
+  </section>
+  <section class="section-shell download-grid">
+    <article class="glass-card download-card reveal spotlight-card">
+      <h3 data-i18n="download_cv_title">Curriculum Vitae</h3>
+      <p data-i18n="download_cv_text">If the PDF exists in your downloads folder, you can open it here.</p>
+      <a class="btn btn-primary" href="downloads/Lebenslauf.pdf" target="_blank" rel="noopener" data-i18n="download_cv_button">Open CV →</a>
+    </article>
+    <article class="glass-card download-card reveal spotlight-card">
+      <h3>LinkedIn</h3>
+      <p data-i18n="download_linkedin_text">For the current public professional profile.</p>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener" data-i18n="download_linkedin_button">Open LinkedIn →</a>
+    </article>
+    <article class="glass-card download-card reveal spotlight-card">
+      <h3>YouTube</h3>
+      <p data-i18n="download_youtube_text">For the current public professional profile.</p>
+      <a class="btn btn-secondary" href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener" data-i18n="download_youtube_button">Open YouTube →</a>
+    </article>
+    <article class="glass-card download-card reveal spotlight-card">
+      <h3>TikTok</h3>
+      <p data-i18n="download_tiktok_text">For the current public professional profile.</p>
+      <a class="btn btn-secondary" href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener" data-i18n="download_tiktok_button">Open TikTok →</a>
+    </article>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
     </div>
-</nav>
-<!-- //////////////////////////////////////// -->
-<div class="container mt-5 text-center">
-    <h1>Download</h1>
-    <p class="mb-4">Hier kannst du meinen Lebenslauf und meinen QR-Code herunterladen:</p>
-
-    <div class="row justify-content-center g-4">
-
-        <!-- Lebenslauf -->
-        <div class="col-md-4">
-            <div class="card shadow p-3">
-                <h5>Lebenslauf</h5>
-                <p>Klicke hier, um meinen CV als PDF herunterzuladen.</p>
-                <iframe src="downloads/Lebenslauf.pdf" width="100%" height="500px"></iframe>
-                <a href="downloads/Lebenslauf.pdf" class="btn btn-dark" download>
-                    Download PDF
-                </a>
-            </div>
-        </div>
-
-        <!-- QR Code -->
-        <div class="col-md-4">
-            <div class="card shadow p-3">
-                <h5>LinkedIn</h5>
-                <p>Scanne hier, um mein LinkedIn Profil zu öffnen.</p>
-                <div class="qr-card-media">
-                    <img src="images/qrlinkedIn.jpg" alt="LinkedIn QR Code" class="qr-code-image">
-                </div>
-                <a href="images/qrlinkedIn.jpg" class="btn btn-dark" download>
-                    Download QR Code
-                </a>
-            </div>
-        </div>
-
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
     </div>
-</div>
-
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
+</footer>
 
 </body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
-    </div>
-</footer>
 </html>

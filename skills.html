@@ -1,159 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_skills">Skills | Jakob Maroufi</title>
+  <meta name="description" content="Skills of Jakob Maroufi in development, media and creative technology.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<!DOCTYPE html>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-               <!--<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>--> 
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
+
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="skills_label">SKILLS</span>
+    <h1 data-i18n-html="skills_title">Tools are a means.<br>Projects are the goal.</h1>
+    <p data-i18n="skills_lead">No made-up 87% skill bars. I'd rather show honestly what I work with and where I'm still learning.</p>
+  </section>
+
+  <section class="section-shell skills-grid">
+    <article class="glass-card skill-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="skills_dev_label">DEVELOPMENT</span>
+      <h3 data-i18n="skills_web_title">Web Development</h3>
+      <p data-i18n="skills_web_text">Foundations and practical projects around modern websites.</p>
+      <div class="skill-list">
+        <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Bootstrap</span><span class="skill-tag" data-i18n="skill_responsive">Responsive Design</span>
+      </div>
+    </article>
+
+    <article class="glass-card skill-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="skills_code_label">SOFTWARE</span>
+      <h3>C# & .NET</h3>
+      <p data-i18n="skills_code_text">Object-oriented programming, collections, persistence, databases and practical school projects.</p>
+      <div class="skill-list">
+        <span class="skill-tag">C#</span><span class="skill-tag">.NET</span><span class="skill-tag">Regex</span>
+        <span class="skill-tag">JSON</span><span class="skill-tag">ADO.NET</span><span class="skill-tag">Dapper</span>
+      </div>
+    </article>
+
+    <article class="glass-card skill-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="skills_creative_label">CREATIVE</span>
+      <h3 data-i18n="skills_media_title">Media & Video</h3>
+      <p data-i18n="skills_media_text">Planning, filming, editing and preparing content for different platforms.</p>
+      <div class="skill-list">
+        <span class="skill-tag" data-i18n="skill_editing">Video Editing</span>
+        <span class="skill-tag" data-i18n="skill_filming">Filming</span>
+        <span class="skill-tag">Storytelling</span>
+        <span class="skill-tag" data-i18n="skill_shortform">Short-form Content</span>
+        <span class="skill-tag" data-i18n="skill_media_design">Media Design</span>
+      </div>
+    </article>
+
+    <article class="glass-card skill-card reveal spotlight-card">
+      <span class="eyebrow" data-i18n="skills_workflow_label">WORKFLOW</span>
+      <h3 data-i18n="skills_workflow_title">Build → Test → Improve</h3>
+      <p data-i18n="skills_workflow_text">I learn the most when theory becomes a real project.</p>
+      <div class="skill-list">
+        <span class="skill-tag">Git</span><span class="skill-tag">GitHub Pages</span>
+        <span class="skill-tag">Debugging</span><span class="skill-tag" data-i18n="skill_research">Research</span>
+        <span class="skill-tag" data-i18n="skill_iteration">Iteration</span><span class="skill-tag" data-i18n="skill_teamwork">Teamwork</span>
+      </div>
+    </article>
+
+    <article class="glass-card skill-card locked-skill-card reveal" data-i18n-aria-label="game_aria" aria-label="Game Development – Coming Soon">
+      <div class="error-tape error-tape-top"><span data-i18n="game_tape_top">ERROR 404 · LOCKED · COMING SOON · ERROR 404 · LOCKED · COMING SOON ·</span></div>
+      <div class="locked-skill-content">
+        <span class="eyebrow" data-i18n="game_soon">COMING SOON</span>
+        <div class="lock-icon" aria-hidden="true">🔒</div>
+        <h3 data-i18n="game_title">Game Development</h3>
+        <p data-i18n="game_text">Not an active skill yet. It belongs here only after I've actually worked with it and built something.</p>
+        <div class="lock-status"><span class="status-dot"></span> <span data-i18n="game_status">ERROR 404: SKILL NOT FOUND</span></div>
+      </div>
+      <div class="error-tape error-tape-bottom"><span data-i18n="game_tape_bottom">LEARNING QUEUE · DO NOT CLAIM YET · LEARNING QUEUE · DO NOT CLAIM YET ·</span></div>
+    </article>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
     </div>
-</nav>
-<!-- //////////////////////////////////////// -->
-
-<div class="container mt-5">
-    <h1 class="title">Skills:</h1>
-
-    
-    <div class="skills bg-dark p-3 rounded" >
-        <h5>Coding:</h5>
-
-        <p>HTML</p>
-        <div class="skill-progress">
-            <div class="skill-fill html">50%</div>
-        </div>
-
-        <p>CSS</p>
-        <div class="skill-progress">
-            <div class="skill-fill css">40%</div>
-        </div>
-
-        <p>Bootstrap</p>
-        <div class="skill-progress">
-            <div class="skill-fill bootstrap">33%</div>
-        </div>
-
-        <p>C#</p>
-        <div class="skill-progress">
-            <div class="skill-fill csharp">30%</div>
-        </div>
-
-        <p>JavaScript</p>
-        <div class="skill-progress">
-            <div class="skill-fill js">15%</div>
-        </div>
-
-        <p>Python</p>
-        <div class="skill-progress">
-            <div class="skill-fill python">10%</div>
-        </div>
-
-        <p>PHP</p>
-        <div class="skill-progress">
-            <div class="skill-fill php">10%</div>
-        </div>
-
-        <p>SQL</p>
-        <div class="skill-progress">
-            <div class="skill-fill sql">20%</div>
-        </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+       <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
     </div>
-    
-    <div class="adobe bg-dark" >
-        <h5>Adobe:</h5>
-
-        <p>Illustrator</p>
-        <div class="skill-progress">
-            <div class="skill-fill illustrator">40%</div>
-        </div>
-
-        <p>Premiere Pro</p>
-        <div class="skill-progress">
-            <div class="skill-fill premiere">65%</div>
-        </div>
-
-        <p>After Effects</p>
-        <div class="skill-progress">
-            <div class="skill-fill aftereffects">33%</div>
-        </div>
-    </div>
-        
-
-    <div class="basics bg-dark" >
-        <h5>Basics:</h5>
-
-        <p>MS-365</p>
-        <div class="skill-progress">
-            <div class="skill-fill ms365">50%</div>
-        </div>
-
-        <p>CapCut</p>
-        <div class="skill-progress">
-            <div class="skill-fill capcut">30%</div>
-        </div>
-
-        <p>Schach</p>
-        <div class="skill-progress">
-            <div class="skill-fill schach">33%</div>
-        </div>
-
-        <p>Deutsch</p>
-        <div class="skill-progress">
-            <div class="skill-fill deutsch">100%</div>
-        </div>
-
-        <p>Englisch</p>
-        <div class="skill-progress">
-            <div class="skill-fill englisch">60%</div>
-        </div>
-    </div>
-
-    <br><br><br>
-    <h1 class="Title">Tools:</h1>
-    <div class="tools bg-dark" > 
-    <ul>
-        <li>Git / GitHub</li>
-        <li>VS Code</li>
-        <li>Sense HAT (Python)</li>
-        <li>Docker (PHP)</li>
-        <li>JetBrains IDEs</li>
-        <li>Oracle VirtualBox</li>
-    </ul>
-    </div>
-</div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
+</footer>
 
 </body>
-
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
-    </div>
-</footer>
 </html>

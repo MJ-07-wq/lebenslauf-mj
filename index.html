@@ -1,212 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_home">Jakob Maroufi | MJError404</title>
+  <meta name="description" content="Portfolio of Jakob Maroufi – Developer, Filmmaker and Creator behind MJError404.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
+
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="landing-hero">
+    <div class="section-shell landing-hero-inner">
+      <div class="landing-copy reveal">
+        <p class="eyebrow" data-i18n="home_eyebrow">DEVELOPER · FILMMAKER · CREATOR</p>
+
+        <h1 data-i18n-html="home_title">
+          I build digital<br>
+          things that<br>
+          <span>make an impact.</span>
+        </h1>
+
+        <p class="landing-lead" data-i18n-html="home_intro">
+          I'm <strong>Jakob Maroufi</strong> — an HTL student from Austria combining web development,
+          filmmaking and creative technology.
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary" data-i18n="home_work">View My Work →</a>
+          <a href="aboutme.html" class="btn btn-secondary" data-i18n="home_about_button">About Me</a>
         </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-icon">&lt;/&gt;</span>
+            <strong data-i18n="home_stat_projects">Projects</strong>
+            <small data-i18n="home_stat_projects_sub">Code · Media · Web</small>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-icon">☆</span>
+            <strong>HTL</strong>
+            <small data-i18n="home_stat_htl_sub">IT · Krems</small>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-icon">🚀</span>
+            <strong data-i18n="home_stat_learning">Always</strong>
+            <small data-i18n="home_stat_learning_sub">Learning</small>
+          </div>
+        </div>
+
+        <div class="hero-feature-bar">
+          <span data-i18n="home_feature_problem">✓ Problem Solver</span>
+          <span data-i18n="home_feature_creative">✓ Creative</span>
+          <span data-i18n="home_feature_debug">✓ Still Debugging</span>
+        </div>
+      </div>
+
+      <div class="hero-showcase hero-visual reveal">
+        <div class="hero-background-code" aria-hidden="true"><pre>function Developer() {
+  const name = "Jakob";
+  const skills = [
+    "HTML", "CSS",
+    "JavaScript", "C#"
+  ];
+
+  return {
+    creativity: true,
+    problemSolver: true
+  };
+}</pre></div>
+
+        <div class="person-backlight" aria-hidden="true"></div>
+
+        <img src="images/hero.jpg" alt="Jakob Maroufi" class="hero-person">
+
+        <div class="terminal-card hero-terminal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <p>portfolio.exe</p>
+          </div>
+          <div class="terminal-body">
+            <p data-i18n-html="terminal_init">&gt; <span class="terminal-accent">initializing</span> portfolio.exe</p>
+            <p data-i18n="terminal_skills">&gt; loading skills...</p>
+            <p data-i18n="terminal_projects">&gt; fetching projects...</p>
+            <p data-i18n="terminal_build">&gt; building awesome experiences...</p>
+            <p class="terminal-success" data-i18n="terminal_ready">&gt; status: READY</p>
+          </div>
+        </div>
+
+        <div class="floating-error hero-error">
+          <span>ERROR 404</span>
+          <small data-i18n-html="home_error_text">boring portfolio<br>not found</small>
+        </div>
+      </div>
     </div>
-</nav>
-<!-- //////////////////////////////////////// -->
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
 
-<!-- //////////////////////////////////////// -->
-<div class="container text-center mt-5">
-    <h1>Jakob Maroufi</h1>
-    <p class="lead">HTL Schüler & angehender Mediendesigner & Webentwickler</p>
-</div>
-<!-- //////////////////////////////////////// -->
-
-<!-- //////////////////////////////////////// -->
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
-    <img src="images/Krems.png" style="width:100%">
-    
-    <div class="text">NEWS: Neues Video vom Stadtpark Krems</div>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-    <img src="images/Science.png" style="width:100%">
-    <div class="text">NEWS: Neuer Teaser vom Science Academy Vlog Staffel 1</div>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
-    <img src="images/Youtube.png" style="width:100%">
-    <div class="text">NEWS: Offizieller Start von MJDebugLife</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<!-- //////////////////////////////////////// -->
-
-<!-- //////////////////////////////////////// -->
-
-<div class="container mt-5">
-    <div class="row g-4">
-
-        <!-- About Me -->
-        <div class="col-md-4 d-flex">
-            <a href="aboutme.html" class="text-decoration-none text-dark home-card-link">
-                <div class="card card-hover shadow home-card">
-                    <button class="button">
-                        <div class="card-body text-center">
-                        <h5 class="card-title">About Me</h5>
-                        <p>Erfahre mehr über mich</p>
-                        <img src="images/ski.jpg" style="width:100%">
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
-
-        <!-- Skills -->
-        <div class="col-md-4 d-flex">
-            <a href="skills.html" class="text-decoration-none text-dark home-card-link">
-                <div class="card card-hover shadow home-card">
-                    <button class="button">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Skills</h5>
-                        <p>Meine Fähigkeiten</p>
-                        <img src="images/w3schools.jpg" style="width:100%">
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
-
-        <!-- Projects -->
-        <div class="col-md-4 d-flex">
-            <a href="projects.html" class="text-decoration-none text-dark home-card-link">
-                <div class="card card-hover shadow home-card">
-                    <button class="button">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Projects</h5>
-                        <p>Meine Projekte</p>
-                        <img src="images/cutting.jpg" style="width:100%">
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
-
-        <!-- Education -->
-        <div class="col-md-4 d-flex">
-            <a href="education.html" class="text-decoration-none text-dark home-card-link">
-                <div class="card card-hover shadow home-card">
-                    <button class="button">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Education</h5>
-                        <p>Meine Ausbildung</p>
-                        <img src="images/HTL.jpg" style="width:100%">
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
- 
-        
-       
-        <!-- Contact -->
-        <div class="col-md-4 d-flex">
-            <a href="contact.html" class="text-decoration-none text-dark home-card-link">
-                <div class="card card-hover shadow home-card">
-                    <button class="button">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Contact</h5>
-                        <p>Kontaktiere mich</p>
-                        <img src="images/qrlinkedIn.jpg" class="home-card-qr" style="width:100%">
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
-
-
-        <!-- Certificates -->
-                <!-- <div class="col-md-4">
-                    <a href="certificates.html" class="text-decoration-none text-dark">
-                        <div class="card card-hover shadow">
-                            <button class="button">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Certificates</h5>
-                                <p>Meine Zertifikate</p>
-                            </div>
-                            </button>
-                        </div>
-                    </a>
-                </div>
-        -->
-
-         <!-- Certificates -->
-        <div class="col-md-4">
-                <div class="card card-hover shadow">
-                    <button class="button">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Comming Soon</h5>
-                        <p>...</p>
-                    </div>
-                    </button>
-                </div>
-            </a>
-        </div>
- 
-
+  <section class="section-shell home-project-section">
+    <div class="home-section-header reveal">
+      <div>
+        <p class="eyebrow" data-i18n="home_projects_label">FEATURED PROJECTS</p>
+        <h2 data-i18n="home_projects_heading">Things I've created.</h2>
+      </div>
+      <a href="projects.html" class="section-more" data-i18n="home_projects_all">View All Projects →</a>
     </div>
-</div>
-<!-- //////////////////////////////////////// -->
 
-<!-- Bootstrap JS -->
+    <div class="home-project-grid">
+      <a href="projects.html#science-academy" class="home-project-card glass-card reveal spotlight-card">
+        <div class="home-project-thumb youtube-gradient">
+          <div class="project-art">SA</div>
+          <span class="home-play">▶</span>
+        </div>
+        <div class="home-project-content">
+          <div class="project-topline"><span data-i18n="home_science_type">Filmmaking</span><small>2026</small></div>
+          <h3>Science Academy</h3>
+          <p data-i18n="home_science_text">Vlogs, science, behind-the-scenes moments and storytelling.</p>
+          <strong data-i18n="home_science_button">Explore Project →</strong>
+        </div>
+      </a>
+
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener" class="home-project-card glass-card reveal spotlight-card">
+        <div class="home-project-thumb">
+          <img src="images/tiktok.png" alt="MJDebugLife" class="project-art">
+          <span class="home-play">▶</span>
+        </div>
+        <div class="home-project-content">
+          <div class="project-topline"><span data-i18n="home_krems_type">Cinematic Videos</span><small>2026</small></div>
+          <h3>Official TikTok Account</h3>
+          <p data-i18n="home_krems_text">Camera work, editing and cinematic storytelling all in one place.</p>
+          <strong data-i18n="home_krems_button">View Project →</strong>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener" class="home-project-card glass-card reveal spotlight-card">
+        <div class="home-project-thumb">
+          <img src="images/youtube.png" alt="MJError404" class="project-art">
+          <span class="home-play">▶</span>
+        </div>
+        <div class="home-project-content">
+          <div class="project-topline"><span data-i18n="home_krems2_type">Cinematic Videos</span><small>2026</small></div>
+          <h3>Official YouTube Channel</h3>
+          <p data-i18n="home_krems2_text">Vlogs, science, behind-the-scenes moments and storytelling.</p>
+          <strong data-i18n="home_krems2_button">View Project →</strong>
+        </div>
+      </a>
+
+      <a href="index.html" class="home-project-card glass-card reveal spotlight-card">
+        <div class="home-project-thumb portfolio-preview">
+          <div class="fake-code-window">
+            <span>&lt;portfolio&gt;</span>
+            <strong>Jakob Maroufi</strong>
+            <span>&lt;/portfolio&gt;</span>
+          </div>
+        </div>
+        <div class="home-project-content">
+          <div class="project-topline"><span data-i18n="home_portfolio_type">Web Development</span><small>2026</small></div>
+          <h3 data-i18n="home_portfolio_title">Portfolio Website</h3>
+          <p data-i18n="home_portfolio_text">This website — built with HTML, CSS and JavaScript.</p>
+          <strong data-i18n="home_portfolio_button">You're already here :)</strong>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="home-info-section">
+    <div class="section-shell home-info-grid">
+      <div class="home-info-column reveal">
+        <p class="eyebrow" data-i18n="home_about_label">ABOUT ME</p>
+        <h2 data-i18n="home_about_heading">Get to know me.</h2>
+        <p data-i18n="home_about_text_1">I'm Jakob, an IT student from Austria with a passion for software development, filmmaking and digital media.</p>
+        <p data-i18n="home_about_text_2">I enjoy turning ideas into actual projects — even when those ideas become slightly larger side quests than expected.</p>
+        <div class="pill-row">
+          <span data-i18n="pill_problem">Problem Solver</span>
+          <span data-i18n="pill_team">Team Player</span>
+          <span data-i18n="pill_creative">Creative</span>
+          <span data-i18n="pill_learning">Continuous Learner</span>
+          <span data-i18n="pill_sidequest">Sidequest Collector</span>
+        </div>
+        <a href="aboutme.html" class="section-more" data-i18n="home_about_more">More About Me →</a>
+      </div>
+
+      <div class="home-info-column reveal">
+        <p class="eyebrow" data-i18n="home_skills_label">CORE SKILLS</p>
+        <h2 data-i18n="home_skills_heading">Technologies I work with.</h2>
+        <div class="home-skill-list">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">.NET</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+        <a href="skills.html" class="section-more" data-i18n="home_skills_more">View All Skills →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shell">
+    <div class="home-contact reveal">
+      <div class="home-contact-icon">✈</div>
+      <div>
+        <h2 data-i18n="home_contact_heading">Have something in mind?</h2>
+        <p data-i18n="home_contact_text">Let's build something interesting together.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="home_contact_button">Let's Connect →</a>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
+</footer>
 
 </body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
-    </div>
-</footer>
 </html>

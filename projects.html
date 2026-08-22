@@ -1,568 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_projects">Projects | Jakob Maroufi & MJError404</title>
+  <meta name="description" content="Videos and projects by Jakob Maroufi / MJError404.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
+
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="projects_label">PROJECTS</span>
+    <h1 data-i18n-html="projects_title">Code, camera<br>& controlled chaos.</h1>
+    <p data-i18n="projects_lead">A selection of videos, clips and projects. Not everything is perfect — but everything is part of the process.</p>
+  </section>
+
+  <section id="video-work" class="section-shell project-grid">
+    <a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/3pl6hFR87os" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/3pl6hFR87os/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">VIDEO</span><h3 data-i18n="proj_sunset_title"></h3><p class="project-meta">23.03.2026</p><p data-i18n="proj_sunset_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/m1sxrTaa5uI" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/m1sxrTaa5uI/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">VIDEO</span><h3 data-i18n="proj_htl_title"></h3><p class="project-meta">24.02.2026</p><p data-i18n="proj_htl_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtu.be/BqY1F2V1Z6M" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/BqY1F2V1Z6M/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">VLOG</span><h3 data-i18n="proj_park_title"></h3><p class="project-meta">11.05.2026</p><p data-i18n="proj_park_text"></p></div>
+    </a>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="science-academy" class="subheading reveal">
+    <span class="eyebrow">SCIENCE ACADEMY</span>
+    <h2 data-i18n="s1_heading">Vlog Series · Season 1</h2>
+    <p data-i18n="s1_lead">Teasers, episodes and the development of a vlog series around science, technology and new experiences.</p>
+  </section>
+
+  <section class="section-shell project-grid">
+    <a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/eEBb3D5FISQ" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/eEBb3D5FISQ/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">TEASER</span><h3 data-i18n="s1_teaser_title"></h3><p data-i18n="s1_teaser_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/fLCtzMXhkAI" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/fLCtzMXhkAI/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 01</span><h3 data-i18n="s1_e1_title"></h3><p data-i18n="s1_e1_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/NbHRzNh4K9g" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/NbHRzNh4K9g/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 02</span><h3 data-i18n="s1_e2_title"></h3><p data-i18n="s1_e2_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/v8TzOGRrifk" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/v8TzOGRrifk/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 03</span><h3 data-i18n="s1_e3_title"></h3><p data-i18n="s1_e3_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/_Dq9TWjDC3w" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/_Dq9TWjDC3w/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 04</span><h3 data-i18n="s1_e4_title"></h3><p data-i18n="s1_e4_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/FiFLr9p5MuA" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/FiFLr9p5MuA/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 05</span><h3 data-i18n="s1_e5_title"></h3><p data-i18n="s1_e5_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/Yt1U0DVvF20" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/Yt1U0DVvF20/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 06</span><h3 data-i18n="s1_e6_title"></h3><p data-i18n="s1_e6_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/6xcLteIDcyk" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/6xcLteIDcyk/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 07</span><h3 data-i18n="s1_e7_title"></h3><p data-i18n="s1_e7_text"></p></div>
+    </a>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="subheading reveal">
+    <span class="eyebrow">SCIENCE ACADEMY</span>
+    <h2 data-i18n="s2_heading">Vlog Series · Season 2</h2>
+    <p data-i18n="s2_lead">The next stage — more material, more experience and more storytelling.</p>
+  </section>
+
+  <section class="section-shell project-grid">
+    <a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/UfvoaM43f7s" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/UfvoaM43f7s/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">TEASER</span><h3 data-i18n="s2_teaser_title"></h3><p data-i18n="s2_teaser_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/0TBMDoIF-Vg" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/0TBMDoIF-Vg/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 01</span><h3 data-i18n="s2_e1_title"></h3><p data-i18n="s2_e1_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/mRfPcJ9RIOY" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/mRfPcJ9RIOY/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 02</span><h3 data-i18n="s2_e2_title"></h3><p data-i18n="s2_e2_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/GhP2BQ6Dluk" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/GhP2BQ6Dluk/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 03</span><h3 data-i18n="s2_e3_title"></h3><p data-i18n="s2_e3_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/OhacXYVkthE" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/OhacXYVkthE/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 04</span><h3 data-i18n="s2_e4_title"></h3><p data-i18n="s2_e4_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/38At5Fbtz1M" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/38At5Fbtz1M/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 05</span><h3 data-i18n="s2_e5_title"></h3><p data-i18n="s2_e5_text"></p></div>
+    </a><a class="glass-card project-card reveal spotlight-card" href="https://youtube.com/shorts/qWfjBHXGdCc" target="_blank" rel="noopener">
+      <div class="project-thumb"><img src="https://img.youtube.com/vi/qWfjBHXGdCc/maxresdefault.jpg" alt=""><div class="play-badge">▶</div></div>
+      <div class="project-body"><span class="tag">EPISODE 06</span><h3 data-i18n="s2_e6_title"></h3><p data-i18n="s2_e6_text"></p></div>
+    </a>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
     </div>
-</nav>
-<!-- //////////////////////////////////////// -->
-
-<div class="container mt-5">
-    <div class="title">
-        <h1 class="project-page-title">My Projects</h1>
-        <p class="project-subtitle">Eine Auswahl an Videos, Clips und Behind-the-Scenes-Momenten.</p>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
     </div>
-   
-
-    <div class="row g-4 mt-3">
-
-        <!-- Projekt 1 -->
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
-                        <a href="https://youtube.com/shorts/3pl6hFR87os" target="_blank" class="yt-thumb project-media">
-                            <img src="https://img.youtube.com/vi/3pl6hFR87os/maxresdefault.jpg" alt="Sonnenuntergang">
-                            <div class="yt-play">▶</div>
-                        </a>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Sonnenuntergang</h5>
-                            <p class="card-text">
-                                Zusammenschnitt von Sonnenuntergängen, aufgenommen am 23 März 2026.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projekt 2 -->
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
-                        <a href="https://youtube.com/shorts/m1sxrTaa5uI" target="_blank" class="yt-thumb project-media">
-                            <img src="https://img.youtube.com/vi/m1sxrTaa5uI/maxresdefault.jpg" alt="HTL am Abend">
-                            <div class="yt-play">▶</div>
-                        </a>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">HTL am Abend</h5>
-                            <p class="card-text">
-                                Zusammenschnitt von Aufnahmen der HTL Krems am Abend, aufgenommen am 24 Februar 2026.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projekt 3 -->
-        <div class="col-md-4">
-            <div class="card shadow project-card">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
-                        <a href="https://youtu.be/BqY1F2V1Z6M" target="_blank" class="yt-thumb project-media">
-                            <img src="https://img.youtube.com/vi/BqY1F2V1Z6M/maxresdefault.jpg" alt="Statdpark Krems">
-                            <div class="yt-play">▶</div>
-                        </a>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Statdpark Krems</h5>
-                            <p class="card-text">
-                                Kleine Tour durch den Statdpark Krems, aufgenommen am 11 Mai 2026.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mt-5">
-   
-
-    <div class="title"> <h1>Science Academy – Vlog Staffelserie Trailer</h1> </div>
-<center>
-
-        <div class="container mt-5 project-section">
-    <div class="title">
-        <h2 class="project-section-title">Science Academy – Staffel 1</h2>
-    </div>
-
-    <div class="row g-4 mt-3">
-        <div class="col-12">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/eEBb3D5FISQ" target="_blank" class="yt-thumb">
-                            <img src="https://img.youtube.com/vi/eEBb3D5FISQ/maxresdefault.jpg" alt="Video Thumbnail">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Science Academy – Staffel 1 Teaser</h5>
-                            <p class="card-text">2026 - 2027 · Neue Staffelserie</p>
-                            <p class="text-muted">Ein erster Blick auf die nächste Etappe der Science-Academy-Reise.</p>
-                            <p class="text-muted">Mehr Experimente, mehr Einblicke und noch mehr spannende Momente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</center>
-
-    <div class="row g-4 mt-3">
-
-        <!-- Folge 1 -->
-        <div class="col-md-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/fLCtzMXhkAI" target="_blank" class="yt-thumb">
-                            <img src="https://img.youtube.com/vi/fLCtzMXhkAI/maxresdefault.jpg" alt="Video Thumbnail">
-
-                            <div class="yt-play">
-                                ▶
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 1 – Willkommen</h5>
-                            <p class="card-text">
-                                2026 - 2027 · 5-Teilige Staffelserie
-                            </p>
-                            <p class="text-muted">Ein neuer Abschnitt beginnt: Der Start einer Reise in die Science Academy und 
-                               erstmals in einer Welt der Wissenschaft, Technologie, Experimente und neuer Möglichkeiten.</p>
-                            <p class="text-muted">
-                                Zwischen neugier und Wissenschaft beginnt unsere spannende Reise.
-                            </p>
-                            <p class="text-muted">Tag 1 der Science-Academy-Reise: Es ist unklar was uns erwartet wird aber es wird sich bereit 
-                                gehalten alles so gut es geht mitzunehmen.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 2 -->
-        <div class="col-md-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                        <a href="https://youtube.com/shorts/NbHRzNh4K9g" target="_blank" class="yt-thumb">
-                        <img src="https://img.youtube.com/vi/NbHRzNh4K9g/maxresdefault.jpg">
-
-                        <div class="yt-play">▶</div>
-                    </a>
-                    </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 2 – Biotech & Futurelab</h5>
-                            <p class="card-text">
-                                2026 - 2027 · 5-Teilige Staffelserie
-                            </p>
-                            <p class="text-muted">Fremde Umgebung direkt am zweiten Tag. Im Haus der 
-                                Digitalisierung setzen wir unsere Reise fort und tauchen ein in die Welt der Biotechnologie und des Futurelabs.</p>
-                            <p class="text-muted">
-                                Es bleibt weiterhin spannend und wir mögen unsere Reise fortsetzen.
-                            </p>
-                            <p class="text-muted">Tag 2 der Science-Academy-Reise: Unbekanntes Terrain aber mit Confidence reinstarten
-                                Räume werden erkundet, neue Menschen kennengelernt und spannende Einblicke gewonnen. 
-                                Wichtig ist dabei das alles für die Reise mitgefilmt wird</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 3 -->
-        <div class="col-md-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                        <a href="https://youtube.com/shorts/v8TzOGRrifk" target="_blank" class="yt-thumb">
-                        <img src="https://img.youtube.com/vi/v8TzOGRrifk/maxresdefault.jpg">
-
-                        <div class="yt-play">▶</div>
-                    </a>
-                    </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 3 – Rückkehr</h5>
-                            <p class="card-text">
-                                2026 - 2027 · 5-Teilige Staffelserie
-                            </p>
-                            <p class="text-muted">Zurück in unserem Terrain.</p>
-                            <p class="text-muted">
-                                Mit Energie und Begeisterung in den Tag starten ist der Schlüssel zum glücklich sein.
-                            </p>
-                            <p class="text-muted">Tag 3 der Science-Academy-Reise: Genau das machen wir auf unserer Reise um das
-                                Gebäude B zu erkunden. Es bleibt weiterhin spannend, aber es bleibt nicht nur beim Gebäude B ^-^.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 4 -->
-        <div class="col-md-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                        <a href="https://youtube.com/shorts/_Dq9TWjDC3w" target="_blank" class="yt-thumb">
-                        <img src="https://img.youtube.com/vi/_Dq9TWjDC3w/maxresdefault.jpg">
-
-                        <div class="yt-play">▶</div>
-                    </a>
-                    </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 4 – KI & Wir</h5>
-                            <p class="card-text">
-                                2026 - 2027 · 5-Teilige Staffelserie
-                            </p>
-                            <p class="text-muted">Back again in unserem Terrain wird die Reise fortgesetzt.</p>
-                            <p class="text-muted">
-                                Doch heute wird etwas neues Erkundet. Gebäude A wurde bisher noch nicht betreten, doch heute ist es soweit. 
-                                Es wird sich aufgeteilt und erkundet was es dort zu entdecken gibt.
-                            </p>
-                            <p class="text-muted">Tag 4 der Science-Academy-Reise: Ein neuer Gebäudeabschnitt wird teilserkundet um 
-                                neue Einblicke zu gewinnen. Es bleibt weiterhin spannend und wir freuen uns auf die nächsten Tage.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 5 -->
-        <div class="col-md-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/FiFLr9p5MuA" target="_blank" class="yt-thumb">
-                            <img src="https://img.youtube.com/vi/FiFLr9p5MuA/maxresdefault.jpg" alt="Video Thumbnail">
-
-                            <div class="yt-play">
-                                ▶
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 5 – Behind the Scenes</h5>
-                            <p class="card-text">
-                                2026 - 2027 · 5-Teilige Staffelserie
-                            </p>
-                            <p class="text-muted">Ein Tag, ein Ziel, eine Gruppe! Gemeinsam mit einem Redakteur von "Die Presse" gehen wir weiter 
-                                auf unserer Reise durch die Science Academy. Es wird ein Tag voller Eindrücke, 
-                                Gesprächen und spannenden Einblicken in die Welt der Wissenschaft.</p>
-                            </p>
-                            <p class="text-muted">
-                                Trakt A wurde weiter durchforscht und es wurden neue Erkenntnisse gewonnen
-                            </p>
-                            <p class="text-muted">Tag 5 der Science-Academy-Reise: Es entsteht langsam ein Bild von dem Gebäude. 
-                                Alles bekannt und Routine, und doch so viele unerforschte Ecken. Bleibt dran für unsere Reise und verpasst nix!
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 6 -->
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/Yt1U0DVvF20" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/Yt1U0DVvF20/maxresdefault.jpg" alt="Staffel 1 Folge 6">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 6 – Neue Wege</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Die Reise geht weiter und bringt neue Eindrücke aus dem Alltag der Science Academy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Folge 7 -->
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/6xcLteIDcyk" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/6xcLteIDcyk/maxresdefault.jpg" alt="Staffel 1 Folge 7">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 1 – Episode 7 – Weitergehen</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Ein weiterer Schritt in der Staffel, mit neuen Momenten, Gesprächen und Blicken hinter die Kulissen.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="container mt-5 project-section">
-    <div class="title">
-        <h2 class="project-section-title">Science Academy – Staffel 2</h2>
-    </div>
-
-    <div class="row g-4 mt-3">
-        <div class="col-12">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/UfvoaM43f7s" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/UfvoaM43f7s/maxresdefault.jpg" alt="Staffel 2 Teaser">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Science Academy – Staffel 2 Teaser</h5>
-                            <p class="card-text">2026 - 2027 · Neue Staffelserie</p>
-                            <p class="text-muted">Ein erster Blick auf die nächste Etappe der Science-Academy-Reise.</p>
-                            <p class="text-muted">Mehr Experimente, mehr Einblicke und noch mehr spannende Momente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/0TBMDoIF-Vg" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/0TBMDoIF-Vg/maxresdefault.jpg" alt="Staffel 2 Folge 1">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 1</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Der Start der neuen Staffel bringt frische Eindrücke und spannende erste Momente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/mRfPcJ9RIOY" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/mRfPcJ9RIOY/maxresdefault.jpg" alt="Staffel 2 Folge 2">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 2</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Neue Orte, neue Gespräche und ein noch intensiverer Blick auf die Reise.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/GhP2BQ6Dluk" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/GhP2BQ6Dluk/maxresdefault.jpg" alt="Staffel 2 Folge 3">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 3</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Ein weiteres Kapitel mit mehr Atmosphäre, mehr Action und mehr Einblicken.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/OhacXYVkthE" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/OhacXYVkthE/maxresdefault.jpg" alt="Staffel 2 Folge 4">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 4</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Der Weg wird spannender und die Eindrücke werden noch persönlicher.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/38At5Fbtz1M" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/38At5Fbtz1M/maxresdefault.jpg" alt="Staffel 2 Folge 5">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 5</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Eine starke Episode mit viel Energie und vielen neuen Momenten.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card shadow project-card h-100">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5 text-center">
-                        <div class="science-media">
-                            <a href="https://youtube.com/shorts/qWfjBHXGdCc" target="_blank" class="yt-thumb">
-                                <img src="https://img.youtube.com/vi/qWfjBHXGdCc/maxresdefault.jpg" alt="Staffel 2 Folge 6">
-                                <div class="yt-play">▶</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Staffel 2 – Folge 6</h5>
-                            <p class="card-text">2026 - 2027 · 5-Teilige Staffelserie</p>
-                            <p class="text-muted">Die Staffel endet mit einem starken Abschluss und vielen Erinnerungen.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
+</footer>
 
 </body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
-    </div>
-</footer>
 </html>
-
-

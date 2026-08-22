@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title_education">Education | Jakob Maroufi</title>
+  <meta name="description" content="Education timeline of Jakob Maroufi.">
+  <meta name="author" content="Jakob Maroufi">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-<!-- //////////////////////////////////////// -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Mein Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="MJError404 Home">
+      <span class="brand-mark">MJ</span>
+      <span class="brand-copy">
+        <strong>MJError404</strong>
+        <small data-i18n="brand_subtitle">DEVELOPER · CREATOR</small>
+      </span>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-               <!--<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>-->
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- //////////////////////////////////////// -->
+    <button class="nav-toggle" type="button" data-i18n-aria-label="nav_open" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-<div class="timeline">
-  <div class="containerT left">
-    <div class="content">
-      <h2>2023-2028</h2>
-      <p><strong>Höhere technische Bundeslehranstalt Krems an der Donau</strong></p>
-    </div>
-  </div>
-  <div class="containerT right">
-    <div class="content">
-      <h2>2022-2023</h2>
-      <p><strong>Lehre Mechatroniker</strong></p>
-    </div>
-  </div>
-  <div class="containerT left">
-    <div class="content">
-      <h2>2021-2022</h2>
-      <p><strong> Polytechnische Schule Herzogenburg</strong></p>
-    </div>
-  </div>
-  <div class="containerT right">
-    <div class="content">
-      <h2>2017-2021</h2>
-      <p><strong>Neue Mittelschule Wagram am Wagram & Fels am Wagram</strong></p>
-    </div>
-  </div>
-  <div class="containerT left">
-    <div class="content">
-      <h2>2013-2017</h2>
-      <p><strong>Volksschule Purkersdorf</strong></p>
-    </div>
-  </div>
-  <div class="containerT right">
-    <div class="content">
-      <h2>2011-2013</h2>
-      <p><strong>Kindergarten Wien</strong></p>
-    </div>
-  </div>
-</div>
+    <nav class="main-nav" data-i18n-aria-label="nav_label" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+      <a href="skills.html" data-i18n="nav_skills">Skills</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="education.html" data-i18n="nav_education">Education</a>
+      <a href="certificates.html" data-i18n="nav_certificates">Certificates</a>
+      <a href="download.html" data-i18n="nav_download">Download</a>
 
+      <button class="language-toggle" type="button" data-i18n-aria-label="language_switch" aria-label="Switch language">
+        <span class="lang-option" data-lang-label="de">DE</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-option" data-lang-label="en">EN</span>
+      </button>
+
+      <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Let's Connect →</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="section-shell page-hero reveal">
+    <span class="eyebrow" data-i18n="education_label">EDUCATION</span>
+    <h1 data-i18n="education_title">The path so far.</h1>
+    <p data-i18n="education_lead">From the early builds to the current HTL version — the complete timeline.</p>
+  </section>
+
+  <section class="timeline">
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2023 – 2028</span><h3>HTL Krems an der Donau</h3><p data-i18n="edu_htl_text">Technical education focused on IT, software development and media.</p><small class="timeline-joke" data-i18n="edu_htl_joke">Current build — debugging in progress.</small></article></div>
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2022 – 2023</span><h3 data-i18n="edu_apprentice_title">Mechatronics Apprenticeship</h3><p data-i18n="edu_apprentice_text">Technical hands-on experience and insight into mechatronic systems.</p><small class="timeline-joke" data-i18n="edu_apprentice_joke">Hardware branch unlocked.</small></article></div>
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2021 – 2022</span><h3>Polytechnische Schule Herzogenburg</h3><p data-i18n="edu_poly_text">Orientation and preparation for the next technical step.</p><small class="timeline-joke" data-i18n="edu_poly_joke">Technical path selected.</small></article></div>
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2017 – 2021</span><h3 data-i18n="edu_middle_title">Neue Mittelschule Wagram am Wagram & Fels am Wagram</h3><p data-i18n="edu_middle_text">The school years where the foundation for the next technical steps was built.</p><small class="timeline-joke" data-i18n="edu_middle_joke">System upgrade in progress...</small></article></div>
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2013 – 2017</span><h3>Volksschule Purkersdorf</h3><p data-i18n="edu_primary_text">The basics: reading, writing, maths and a lot of curiosity.</p><small class="timeline-joke" data-i18n="edu_primary_joke">Core skills unlocked: Reading, Writing & Math.</small></article></div>
+    <div class="timeline-item reveal"><article class="glass-card timeline-card spotlight-card"><span class="timeline-year">2011 – 2013</span><h3>Kindergarten Wien</h3><p data-i18n="edu_kindergarten_text">The very early build. Mostly learning how the world works.</p><small class="timeline-joke" data-i18n="edu_kindergarten_joke">Version 0.1 — Pre-Alpha Development Phase.</small></article></div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="section-shell footer-inner">
+    <div>
+      <strong>Jakob Maroufi</strong>
+      <p data-i18n="footer_role">Developer · Filmmaker · Creator</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@MJError404" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/jakob-maroufi-1bb01a386/" target="_blank" rel="noopener">LinkedIn</a>
+       <a href="https://www.tiktok.com/@mjdebuglife" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="copyright" data-i18n="footer_copyright">© 2026 Jakob Maroufi · MJDebugLife</p>
+  </div>
+</footer>
 
 </body>
-<br><br><br>
-<footer>
-    <div class="containerFooter bg-dark">
-        &copy; 2026 Mein Portfolio | Jakob Maroufi | Alle Rechte vorbehalten.
-    </div>
-</footer>
 </html>
