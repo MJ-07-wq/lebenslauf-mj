@@ -1449,6 +1449,12 @@ button, input, textarea { font: inherit; }
 
 .project-body { padding: 21px; }
 
+.more-videos-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
 .project-body h3 {
   margin: 10px 0 7px;
 }
